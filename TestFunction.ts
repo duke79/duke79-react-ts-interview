@@ -1,5 +1,5 @@
-const inputArray = ["test", "whatNot"];
+const input = ["test", "whatNot"];
 
 export const test = () => {
-  return inputArray;
+  return input;
 };

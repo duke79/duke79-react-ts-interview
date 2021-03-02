@@ -5,15 +5,17 @@ const TestComponent = () => {
   const [output, setOutput] = React.useState(undefined as any);
 
   React.useEffect(() => {
-    setOutput(test());
+    const result = test();
+    console.log({ result });
+    setOutput(result);
   }, []);
 
   return (
     <div
       style={{
         margin: "auto",
-        // border: '1px solid black',
-        // borderRadius: '10px',
+        // border: "1px solid black",
+        // borderRadius: "10px",
         padding: "10px",
         fontSize: "18px"
       }}
