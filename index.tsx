@@ -1,23 +1,19 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
-import Logger from "./Logger";
 import TestComponent from "./TestComponent";
 
 const App = () => {
-  React.useEffect(() => {
-    console.log("App Started!");
-  }, []);
-
   return (
     <div
       style={{
         height: "98vh",
         display: "grid",
-        gridTemplateRows: "3fr 1fr"
+        gridTemplateRows: "1fr",
+        margin: "auto",
+        background: "#00000029",
       }}
     >
       <TestComponent />
-      <Logger reversed />
     </div>
   );
 };
